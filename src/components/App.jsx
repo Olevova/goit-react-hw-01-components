@@ -20,6 +20,8 @@ export const App = () => {
     </div>  
 };
   
+
+
   //  <div style={{
   //   height: '100vh',
   //   display: 'flex',
@@ -27,6 +29,6 @@ export const App = () => {
   //   alignItems: 'center',
   //   fontSize: 40,
   //   color: '#010101'
-  // }} ></div>
+  //  ></div>
 
   
