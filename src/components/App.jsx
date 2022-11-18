@@ -1,11 +1,8 @@
-import {Profile} from "./Profile/Profile";
+import { Profile } from "./Profile/Profile";
+import { Statistics } from "./Statistics/Statistics";
 import user from 'user.json';
-// const RT = ({ name, email }) =>
-// (<div>
-//   <h1>{name}</h1>
-//   <p>{email}</p>
-// </div>);
-  
+import data from 'data.json';
+
 console.log(user);
 
 
@@ -37,7 +34,8 @@ export const App = () => {
       tag={user.tag}
       location={user.location}
       stats={user.stats}
-    />
+      />
+      <Statistics title ="ok" stats={data} />
     </div>
   );
 };
