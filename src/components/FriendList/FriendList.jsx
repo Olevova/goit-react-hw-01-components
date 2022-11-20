@@ -1,4 +1,4 @@
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 // import css from "./Statistics.module.css";
 
 export const FriendList = ({friends}) =>
@@ -10,3 +10,10 @@ export const FriendList = ({friends}) =>
         </li>
     })
 
+
+FriendList.protoType = {
+    avatar: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool.isRequired,
+    id: PropTypes.number.isRequired
+}

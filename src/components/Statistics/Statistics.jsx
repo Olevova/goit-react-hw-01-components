@@ -1,8 +1,8 @@
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 // import css from "./Statistics.module.css";
 
 export const Statistics = ({stats,title= "Upload stats"}) => {
-    return <section class="statistics">
+    return <section className="statistics">
         <h2 className="title">{title}</h2>
         <ul className="stat-list">
         {stats.map((stat)=> <li key = {stat.id} className="item">
@@ -11,4 +11,13 @@ export const Statistics = ({stats,title= "Upload stats"}) => {
     </li>)}
   </ul>
 </section>
+}
+
+Statistics.propTypes = {
+  title: PropTypes.string.isRequired,
+  stat: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    parcentage: PropTypes.number.isRequired
+  })
 }

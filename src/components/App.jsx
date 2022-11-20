@@ -7,20 +7,10 @@ import data from 'data.json';
 import friends from 'friends.json';
 import transactions from 'transactions';
 
+import "../index.css";
+
 console.log(user);
 
-
-// export const App = () => {
-//   return <div>
-//     <Profile avatar={user.avatar}
-//       name={user.name}
-//       tag={user.tag}
-//       location={user.location}
-//       stats={user.stats}
-//     />;
-//     </div>  
-// };
-  
 export const App = () => {
   return (
     <div
@@ -34,7 +24,7 @@ export const App = () => {
       }}
     >
       <Profile avatar={user.avatar}
-      name={user.name}
+      username={user.username}
       tag={user.tag}
       location={user.location}
       stats={user.stats}

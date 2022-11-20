@@ -22,7 +22,7 @@ export const Profile = ({username, tag, location, avatar, stats}) => {
                 </li>
                 <li>
                     <span className="label">Views</span>
-                    <span className="quantity">{stats.vievs}</span>
+                    <span className="quantity">{stats.views}</span>
                 </li>
                 <li>
                     <span className="label">Likes</span>
@@ -37,12 +37,14 @@ Profile.propTypes = {
     username: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
-    followers: PropTypes.number.isRequired,
-    views: PropTypes.number.isRequired,
-    likes: PropTypes.number.isRequired
+    stats: PropTypes.shape({
+        followers: PropTypes.number.isRequired,
+        views: PropTypes.number.isRequired,
+        likes: PropTypes.number.isRequired
+    })
 }
 
-
+// "jgluke",
 // function SocialCard ({ name, tag, location, avatar, stats }) {
  
 //   return (
