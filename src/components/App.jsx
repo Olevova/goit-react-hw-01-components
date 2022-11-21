@@ -15,12 +15,13 @@ export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
+        height: 'auto',
         display: 'flex',
+        flexDirection: "column",
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
       }}
     >
       <Profile avatar={user.avatar}
@@ -30,7 +31,9 @@ export const App = () => {
       stats={user.stats}
       />
       <Statistics title="ok" stats={data} />
-      <FriendList friends={friends} />
+      <div>
+        <FriendList friends={friends} />
+        </div>
       <TransactionHistory items={transactions} />
     </div>
     

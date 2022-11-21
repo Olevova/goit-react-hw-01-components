@@ -1,14 +1,17 @@
 import PropTypes from "prop-types";
-// import css from "./Statistics.module.css";
+import css from "./FriendList.module.css";
 
-export const FriendList = ({friends}) =>
+export const FriendList = ({ friends }) =>
+    
     friends.map(({ avatar, name, isOnline, id }) => {
         return <li key ={id} class="item">
-            <span className="status"></span>
+            <span className={isOnline? css.true : css.false}>{isOnline}</span>
             <img class="avatar" src={avatar} alt={name} width="48" />
             <p class="name">{name}</p>
         </li>
-    })
+    }
+    
+    )
 
 
 FriendList.protoType = {

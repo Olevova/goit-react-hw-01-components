@@ -1,6 +1,7 @@
-/* .profile {
-  background-color: bisque;
+.profile {
+  background-color: rgb(237, 127, 127);
   display: flex;
   width: 600px;
   height: auto;
-} */
+  flex-direction: column;
+}
