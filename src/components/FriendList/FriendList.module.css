@@ -1,10 +1,9 @@
-/* .status {
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: brown;
-} */
+.friend_list {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: auto;
+}
 
 /* .false {
   display: block;

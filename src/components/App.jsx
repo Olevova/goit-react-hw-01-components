@@ -31,9 +31,7 @@ export const App = () => {
       stats={user.stats}
       />
       <Statistics title="ok" stats={data} />
-      <div>
-        <FriendList friends={friends} />
-        </div>
+      <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
     </div>
     
