@@ -45,6 +45,12 @@
   margin: 0;
   width: 100%;
 }
+
 .quantity {
   font-size: 30px;
+  margin: 15px;
+}
+
+.label {
+  margin: 5px;
 }
