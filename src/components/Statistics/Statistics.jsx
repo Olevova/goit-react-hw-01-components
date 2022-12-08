@@ -2,9 +2,10 @@ import PropTypes from "prop-types";
 import {SectionStatistic,StaticList, Item} from "./Statistics.styled"
 // import css from "./Statistics.module.css";
 
-export const Statistics = ({stats,title= "Upload stats"}) => {
-    return <SectionStatistic>
-        <h2 className="title">{title}</h2>
+export const Statistics = ({stats, title}) => {
+  return <SectionStatistic>
+    {title &&(
+      <h2 className="title">{title}</h2>)}
         <StaticList>
         {stats.map((stat)=> <Item key = {stat.id}>
             <span className="label">{ stat.label}</span>
